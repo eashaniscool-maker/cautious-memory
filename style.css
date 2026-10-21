@@ -1,0 +1,24 @@
+*{box-sizing:border-box}
+:root{--ink:#1b232b;--paper:#f3f4f1;--accent:#0f5c5c;--line:#e8b021;--mute:#5a6670;--card:#fff}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 "Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}a:focus-visible{outline:3px solid var(--line);outline-offset:2px}
+header{background:var(--ink);padding:1.1rem 1.25rem;border-bottom:6px dashed var(--line)}
+.bar{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+header a{color:#fff;text-decoration:none}.logo{font:700 1.6rem Georgia,serif}
+nav a{margin-left:1.2rem;font-size:.95rem}
+main{max-width:1080px;margin:auto;padding:2rem 1.25rem 3rem}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+.intro{max-width:640px;margin-bottom:2rem}.intro h1{font-size:2.4rem;margin:.2rem 0 .6rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.5rem}
+.card{background:var(--card);border-radius:6px;overflow:hidden;border:1px solid #dcdfdb;display:flex;flex-direction:column}
+.card img,.hero{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#cfd4d0}
+.card div{padding:1rem 1.1rem 1.2rem}.card h2{font-size:1.2rem;margin:.1rem 0 .4rem}
+.card h2 a{color:var(--ink);text-decoration:none}.card h2 a:hover{color:var(--accent)}
+.card p{margin:0;color:var(--mute);font-size:.95rem}
+time{color:var(--mute);font-size:.85rem}
+article{max-width:700px;margin:auto}article h1{font-size:2.2rem;margin:.3rem 0 1rem}
+article .hero{border-radius:6px;margin:1rem 0 1.5rem}article p{font-family:Georgia,serif;font-size:1.1rem}
+.more{margin-top:2.5rem;padding-top:1rem;border-top:2px dashed var(--line)}
+footer{background:var(--ink);color:#c7ced4;text-align:center;padding:1.5rem;font-size:.9rem}
+@media(max-width:600px){.intro h1,article h1{font-size:1.8rem}nav a{margin:0 1rem 0 0}}
+@media(prefers-reduced-motion:no-preference){.card{transition:transform .15s}.card:hover{transform:translateY(-3px)}}
